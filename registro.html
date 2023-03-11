@@ -6,11 +6,11 @@
     <title>Doguito Petshop | Crear cuenta</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/assets/css/base/base.css">
-    <link rel="stylesheet" href="/assets/css/registro.css">
-    <link rel="stylesheet" href="/assets/css/componentes/card.css">
-    <link rel="stylesheet" href="/assets/css/componentes/inputs.css">
-    <link rel="stylesheet" href="/assets/css/componentes/button.css">
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/registro.css">
+    <link rel="stylesheet" href="./assets/css/componentes/card.css">
+    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="./assets/css/componentes/button.css">
 </head>
 <body>
     <main class="container flex flex--column flex--center">
@@ -47,7 +47,7 @@
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlength="10"  maxlength="10" data-tipo="numero">
+                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlegth="10" maxlength="10" data-tipo="numero">
                         <label class="input-label" for="phoneNumber">Número telefónico</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -55,17 +55,17 @@
                 <fieldset>
                     <legend class="form__label">Dirección</legend>
                     <div class="input-container">
-                        <input name="cep" id="cep" class="input" type="text" placeholder="CEP" pattern="[\s\S]{10:40}" data-tipo="direccion" required>
-                        <label class="input-label" for="cep">Dirección completa</label>
+                        <input name="address" id="address" class="input" type="text" placeholder="Dirección" required pattern="[\s\S]{10,40}" data-tipo="direccion">
+                        <label class="input-label" for="address">Dirección completa</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="city" id="city" class="input" type="text" placeholder="Ciudad"pattern="[\s\S]{4:30}" data-tipo="ciudad" required>
+                        <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern="[\s\S]{4,30}" data-tipo="ciudad">
                         <label class="input-label" for="city">Ciudad</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="state" id="state" class="input" type="text" placeholder="Estado"pattern="[\s\S]{4:30}" data-tipo="estado" required>
+                        <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern="[\s\S]{4,30}" data-tipo="estado">
                         <label class="input-label" for="state">Estado</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
@@ -75,7 +75,7 @@
         </section>
     </main>
 
-    <script src="/js/app.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
 </body>
 </html>
 
